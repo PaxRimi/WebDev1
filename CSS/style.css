@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 1372px;
+    background-image: url("../Images/Hot vs Cold 2560x1440.jpg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+
+header img:first-of-type{
+    width: 112px;
+    height: 111px;
+    opacity: 0.7;
+    margin-right: 24px;
+}
+
+header img:last-of-type{
+    width: 293px;
+    height: 78px;
+    opacity: 0.6;
+}
