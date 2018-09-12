@@ -47,6 +47,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 72px;
 }
 
 h2{
@@ -259,4 +260,42 @@ input[type=submit]:hover{
 .btnCheckbox .rejectionBtn:hover{
     background: rgb(255,0,0);
     background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 40%, rgba(244,73,91,1) 100%);
+}
+
+.bottomLogo{
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 71px;
+
+}
+
+.bottomLogo_logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 34px;
+}
+
+.bottomLogo_logo img:first-of-type{
+    width: 75px;
+    height: 74px;
+    opacity: 0.15;
+}
+
+.bottomLogo_logo img:last-of-type{
+    width: 263px;
+    height: 70px;
+    opacity: 0.2;
+}
+
+.bottomLogo_link{
+    width: 100%;
+    text-align: center;
+}
+
+.bottomLogo_link img{
+    width: 246px;
+    height: 18px;
+    opacity: 0.15;
 }
