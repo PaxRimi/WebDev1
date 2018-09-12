@@ -66,24 +66,27 @@
             </form>
             <h2>Send Email</h2>
             <form>
+                <p class="Error" id="mailName">Podaj swoje imię!</p>
                 <div class="input">
                     <img src="Images/form_userIcon.png"/>
                     <label for="name2">Name</label>
                     <input type="text" id="name2" name="nick" placeholder="Your Name"/>
                 </div>
+                <p class="Error" id="mailMail">Podaj swój email!</p>
                 <div class="input">
                     <img src="Images/form_messageIcon.png"/>
                     <label for="email2">E-mail</label>
                     <input type="email" id="email2" name="email" placeholder="Your Email"/>
                 </div>
-                <textarea placeholder="Type your message ..."></textarea>
+                <p class="Error" id="mailTxT">Podaj treść wiadomości!</p>
+                <textarea id="mailMessage" placeholder="Type your message ..."></textarea>
                 <div class="example">
                     <p>
                         <input type="checkbox" id="test3"/>
                         <label for="test3">Send a copy to my Email</label>
                     </p>
                 </div>
-                <input type="submit" value="Send Email">
+                <input id="mailSub" type="submit" value="Send Email">
             </form>
         </section>
         <section class="shortForm">
