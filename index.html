@@ -8,6 +8,7 @@
     <title>Challenge 1</title>
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300i,600" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <script type="text/javascript" rel="script" src="JS/script.js"></script>
 </head>
 <body>
     <header>
@@ -18,26 +19,31 @@
         <section class="longForm">
             <h2>Register Form</h2>
             <form>
+                <p class="Error" id="regNick">Podaj swój nick!</p>
                 <div class="input">
                     <img src="Images/form_userIcon.png"/>
                     <label for="name">Name</label>
                     <input type="text" id="name" name="nick" placeholder="Username"/>
                 </div>
+                <p class="Error" id="regPass">Podaj swoje hasło - pola z hasłem musza się zgadzać!</p>
                 <div class="input">
                     <img src="Images/form_lockIcon.png"/>
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" placeholder="Password"/>
                 </div>
+                <p class="Error" id="regPassConf">Podaj swoje hasło - pola z hasłem musza się zgadzać!</p>
                 <div class="input">
                     <img src="Images/form_lockIcon.png"/>
                     <label for="confPassword">Confirm Password</label>
-                    <input type="text" id="confPassword" name="password" placeholder="Confirm Password"/>
+                    <input type="password" id="confPassword" name="password" placeholder="Confirm Password"/>
                 </div>
+                <p class="Error" id="regMail">Podaj swój adres email!</p>
                 <div class="input">
                     <img src="Images/form_messageIcon.png"/>
                     <label for="email">E-mail</label>
                     <input type="email" id="email" name="email" placeholder="Email"/>
                 </div>
+                <p class="Error" id="regCity">Podaj lokalizację!</p>
                 <div class="input">
                     <img src="Images/form_locationIcon.png"/>
                     <label for="location">Your Location</label>
@@ -49,13 +55,14 @@
                         <option value="Poznań">Poznań</option>
                     </select>
                 </div>
+                <p class="Error" id="regCheck">Potwierdź regulamin!</p>
                 <div class="example">
                     <p>
                         <input type="checkbox" id="test2"/>
                         <label for="test2">I have read and accept the terms of use.</label>
                     </p>
                 </div>
-                <input type="submit" value="Sign up">
+                <input id="regSub" type="submit" value="Sign up">
             </form>
             <h2>Send Email</h2>
             <form>
@@ -112,7 +119,7 @@
                 <div class="input">
                     <img src="Images/form_phoneIcon.png"/>
                     <label for="phone">Enter your Phone number</label>
-                    <input type="text" id="phone" name="phone" placeholder="Enter your Phone number"/>
+                    <input type="number" id="phone" name="phone" placeholder="Enter your Phone number"/>
                 </div>
                 <div class="btnCheckbox">
                     <input class="twoBtn" type="submit" value="Send">
