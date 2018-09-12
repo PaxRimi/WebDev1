@@ -36,6 +36,8 @@ header img:last-of-type{
 }
 
 main{
+    width: 1050px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
 }
@@ -52,11 +54,11 @@ h2{
     font-size: 32px;
     font-weight: 600;
     letter-spacing: 1.2px;
+    margin-top: 59px;
 }
 
 form{
     width: 380px;
-    height: 421px;
     background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
@@ -71,6 +73,17 @@ form{
 
 label{
     display: none;
+}
+
+textarea{
+    width: 337px;
+    height: 230px;
+    background-color: transparent;
+    color: #afafaf;
+    font-size: 16px;
+    padding: 14px;
+    resize: none;
+    margin-bottom: 14px;
 }
 
 .input{
@@ -122,11 +135,12 @@ label{
     color: #afafaf;
 }
 
+
+
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked)
 {
-    position: absolute;
-    left: -9999px;
+    display: none;
 }
 [type="checkbox"]:checked + label,
 [type="checkbox"]:not(:checked) + label
@@ -203,8 +217,46 @@ input[type=submit]{
     color: white;
     font-size: 24px;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 input[type=submit]:hover{
-    background-color: #3b9a00;
+    background: rgb(59,154,0);
+    background: linear-gradient(0deg, rgba(59,154,0,1) 0%, rgba(59,154,0,1) 40%, rgba(147,208,43,1) 100%);
+}
+
+.btnCheckbox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btnCheckbox input[type=submit]{
+    width: 139px;
+    height: 41px;
+    margin-top: 0;
+}
+
+.btnCheckbox .twoBtn[type=submit] {
+    width: 149px;
+}
+
+.btnCheckbox .inactiveBtn{
+    opacity: 0.5;
+    cursor: auto;
+}
+
+.btnCheckbox .inactiveBtn:hover{
+    background: rgb(147,208,43);
+}
+
+.btnCheckbox .rejectionBtn{
+    background:rgb(	244, 73, 91);
+    border: 1px solid rgb(255,0,0);
+}
+
+.btnCheckbox .rejectionBtn:hover{
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 40%, rgba(244,73,91,1) 100%);
 }
