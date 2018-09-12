@@ -136,6 +136,11 @@ textarea{
     color: #afafaf;
 }
 
+.Error{
+    display: none;
+    color: red;
+    font-size: 12px;
+}
 
 
 [type="checkbox"]:checked,
