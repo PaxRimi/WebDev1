@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             stop = true;
         }
 
-        if (regEmail.value.length === 0 || regEmail.value.indexOf("@") < 1){
+        if (regEmail.value.length === 0 || regEmail.value.indexOf("@") < 1 || regEmail.value.lastIndexOf(".") < regEmail.value.lastIndexOf("@")){
             regEmailFalse.style.display = "block";
             stop = true;
         }
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             stop = true;
         }
 
-        if (mailMail.value.length === 0 || mailMail.value.indexOf("@") < 1){
+        if (mailMail.value.length === 0 || mailMail.value.indexOf("@") < 1 || mailMail.value.lastIndexOf(".") < mailMail.value.lastIndexOf("@")){
             mailMailFalse.style.display = "block";
             stop = true;
         }
